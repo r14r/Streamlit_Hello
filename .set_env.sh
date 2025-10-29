@@ -1,6 +1,6 @@
 export ENV_NAME=Default
 export ENV_HOME=$PWD
-export VSCODE_ENV=Streamlit_Hello
+export ENV_VSCODE=Streamlit_Hello
 
 . venv env        init
 . venv vscode     init

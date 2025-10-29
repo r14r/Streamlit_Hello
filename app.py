@@ -16,7 +16,7 @@ from pathlib import Path
 
 import streamlit as st
 
-dir_path = Path(__file__).parent
+dir_path = Path(__file__).parent / "pages"
 
 
 # Note that this needs to be in a method so we can have an e2e playwright test.
@@ -25,25 +25,25 @@ def run() -> None:
         {
             "Pages": [
                 st.Page(
-                    dir_path / "hello.py", title="Hello", icon=":material/waving_hand:"
+                    dir_path / "Hello.py", title="Hello", icon=":material/waving_hand:"
                 ),
                 st.Page(
-                    dir_path / "dataframe_demo.py",
+                    dir_path / "2_Dataframe.py",
                     title="DataFrame demo",
                     icon=":material/table:",
                 ),
                 st.Page(
-                    dir_path / "plotting_demo.py",
+                    dir_path / "4_Plotting.py",
                     title="Plotting demo",
                     icon=":material/show_chart:",
                 ),
                 st.Page(
-                    dir_path / "mapping_demo.py",
+                    dir_path / "3_Mapping.py",
                     title="Mapping demo",
                     icon=":material/public:",
                 ),
                 st.Page(
-                    dir_path / "animation_demo.py",
+                    dir_path / "1_Animation.py",
                     title="Animation demo",
                     icon=":material/animation:",
                 ),
